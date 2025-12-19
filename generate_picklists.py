@@ -15,7 +15,9 @@ Behavior:
   - Automatically maps commonly-named columns (order_id, store_id, sku, order_qty, zone, bin, bin_rank, pod_priority, weight_in_grams, fragile, dt/order_date for cutoff).
   - If you want full-file processing on very large files, consider setting MAX_ROWS=None or using chunking (see comment).
 """
-
+"""
+Assumption: Infinite pickers
+"""
 import os
 import pandas as pd
 from datetime import datetime
